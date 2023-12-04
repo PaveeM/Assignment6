@@ -1,0 +1,336 @@
+/* Common feature */
+header {
+    background-color: #b10000;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #5e5e5e;
+    padding: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 0 15px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff9900;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #5e5e5e;
+    color: white;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Homepage */
+.homeMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    width: 90%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.homeMain h2 {
+    color: #333;
+}
+
+.homeMain ul {
+    list-style-type: disc; 
+    padding-left: 20px; 
+    margin-bottom: 10px; 
+}
+
+/* About */
+.contentAbout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+}
+
+/* Contact */
+.contactContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+}
+
+.contactForm fieldset {
+    background-color: #f0f0f0; 
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+
+.contactForm {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.contactForm legend {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contactForm label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.contactForm input[type="text"],
+.contactForm input[type="email"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.contactForm button {
+    display: inline-block;
+    background-color: #539660;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contactForm button.cancel {
+    background-color: #f71a1a;
+}
+
+.contactForm textarea#description {
+width: 95%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 3px;
+height: 100px; 
+}
+
+.thankYouContainer {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/*Product*/
+.productContent {
+    display: flex;
+    padding: 20px;
+    text-align: center; 
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    margin: 50px auto;
+    
+}
+
+.product-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.product img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    max-width: 100%; 
+}
+
+.product-title {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+table {
+font-family: arial, sans-serif;
+border-collapse: collapse;
+width: 150%;
+}
+
+td, th {
+border: 1px solid #dddddd;
+text-align: left;
+padding: 8px;
+}
+
+/*Servce*/
+.serviceContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+}
+
+.service-list {
+    list-style-type: disc;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.service-list li {
+    margin: 10px 0;
+}
+
+/*Sign-up*/
+.registraionForm {
+    text-align: center; 
+    width: 100%;
+}
+
+.registraionForm form {
+    display: inline-block; 
+    text-align: left; 
+}
+
+.registraionForm label, 
+.registraionForm input {
+    display: inline-block; 
+    margin-right: 10px; 
+    margin-bottom: 10px; 
+}
+
+.registraionForm #age {
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.registraionForm #password {
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.registraionForm #confirm {
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.errorMessage {
+    color: red;
+    display: none; 
+    font-size: small;
+    margin-bottom: 10px;
+}
+
+
+/*Weather data*/
+.weatherBody 
+{
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 50px;
+}
+
+.weatherValueBox
+{
+  display: inline-block;
+  padding: 20px;
+  margin-top: 20px;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.weatherValueBox p 
+{
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+#weather-icon 
+{
+    width: 50px;
+    height: 50px;
+}
+
+
+

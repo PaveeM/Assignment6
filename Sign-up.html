@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | XYZ Store</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>XYZ Store</h1>
+    </header>
+
+    <nav>
+        <b>
+            <a href="Index.html">Home</a>&nbsp;&nbsp;
+            <a href="About.html">About</a>&nbsp;&nbsp;
+            <a href="Contact.html">Contact</a>&nbsp;&nbsp;
+            <a href="Product.html">Product</a>&nbsp;&nbsp;
+            <a href="Services.html">Services</a>
+            <a href="Sign-up.html">Sign up or Registration</a>
+        </b>
+    </nav>
+
+    <main>
+        <div class="registraionForm">
+            <form class="contactForm" onsubmit="return validateForm()">
+                <fieldset>
+                    <div>
+                    <legend>Your information</legend>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required oninput="validateFirstName()"><br>
+                    <span id="firstNameError" class="errorMessage"></span>
+        
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required oninput="validateLastName()">
+                    <span id="lastNameError" class="errorMessage"></span>
+                    
+
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required><br>
+
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required><br>
+
+                    <label for="postalCode">Postal Code:</label>
+                    <input type="text" id="postalCode" name="postalCode" required oninput="validatePostalCode()">
+                    <span id="postalCodeError" class="errorMessage"></span>
+
+                    <label for="province">Province:</label>
+                    <input type="text" id="province" name="province" required oninput="validateProvince()">
+                    <span id="provinceError" class="errorMessage"></span>
+
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required oninput="validateAge()">
+                    <span id="ageError" class="errorMessage"></span>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required oninput="validatePassword()">
+                    <span id="passwordError" class="errorMessage"></span>
+
+                    <label for="confirm">Confirm:</label>
+                    <input type="password" id="confirm" name="confirm" required oninput="validatePassword()">
+                    <span id="confirmError" class="errorMessage"></span>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required oninput="validateEmail()">
+                    <span id="emailError" class="errorMessage"></span>
+                    <div id="confirmationMessage" style="display: none;">
+                        Thanks for registering with our website, your customer record was created successfully.
+                    </div>
+                    </div>
+                </fieldset>
+        
+                <div style="display: flex; justify-content: center; margin-top: 20px;">
+                    <button type="submit" style="margin-right: 10px;">Register Now</button>
+                    <button type="button" class="cancel" id="clearButton" style="margin-left: 10px;">Clear Form</button>
+                </div>
+            </form>
+           
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <small>
+                <i>Copyright &copy; 2023 XYZ Products<br>
+                <a href="mailto:pminratnakorn@myseneca.ca">Pavee Minratnakorn</a></i>
+            </small>
+        </div>
+    </footer>
+    <script src="Fill.js"></script>
+</body>
+</html>
+
+
+
+
